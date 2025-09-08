@@ -1,0 +1,168 @@
+`roadmap.html` ```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML Learning Roadmap</title>
+    <style>
+        /* Reset and base */
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background: #f4f7fb;
+            color: #333;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+        
+        h1 {
+            font-weight: 700;
+            color: #222c63;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2.8rem;
+            letter-spacing: 0.02em;
+            text-shadow: 1px 1px 5px rgba(34, 44, 99, 0.15);
+        }
+        
+        .roadmap {
+            max-width: 650px;
+            background: white;
+            margin: 0 auto;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(99, 99, 99, 0.12);
+            padding: 2.5rem 3rem;
+            border-top: 5px solid #3b82f6;
+        }
+        
+        ol {
+            counter-reset: step-counter;
+            padding-left: 1.3rem;
+        }
+        
+        li {
+            margin-bottom: 1.3rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            gap: 0.3rem 0.6rem;
+        }
+        /* Step number with custom counter (hidden here because regular numbers are shown) */
+        /* li::before {
+      counter-increment: step-counter;
+      content: counter(step-counter) ".";
+      font-weight: 700;
+      color: #3b82f6;
+      margin-right: 0.6rem;
+      font-size: 1.1rem;
+    } */
+        
+        a {
+            font-weight: 600;
+            color: #2563eb;
+            text-decoration: none;
+            transition: color 0.2s ease;
+            flex-shrink: 0;
+        }
+        
+        a:hover,
+        a:focus {
+            color: #1e40af;
+            text-decoration: underline;
+            outline: none;
+        }
+        
+        .description {
+            flex: 1 1 350px;
+            color: #4b5563;
+            font-size: 1rem;
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 1.5rem;
+            }
+            .roadmap {
+                padding: 1.5rem 2rem;
+            }
+            h1 {
+                font-size: 2rem;
+                margin-bottom: 1.5rem;
+            }
+            li {
+                font-size: 0.95rem;
+            }
+            .description {
+                flex-basis: 100%;
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML Learning Roadmap</h1>
+    <div class="roadmap" role="region" aria-label="HTML Learning Roadmap">
+        <ol>
+            <li>
+                <a href="#" tabindex="0">Introduction to HTML</a>
+                <span class="description">- What is HTML, basic structure, tags, and attributes.</span>
+            </li>
+            <li>
+                <a href="#" tabindex="0">Text Formatting</a>
+                <span class="description">- Headings, paragraphs, bold, italic, lists (ul, ol, li).</span>
+            </li>
+            <li>
+                <a href="#" tabindex="0">Links and Images</a>
+                <span class="description">- Anchor tags, image tags, attributes (href, src, alt).</span>
+            </li>
+            <li>
+                <a href="#" tabindex="0">Tables</a>
+                <span class="description">- Table, tr, td, th, thead, tbody, tfoot.</span>
+            </li>
+            <li>
+                <a href="#" tabindex="0">Forms</a>
+                <span class="description">- Input, textarea, select, button, form attributes.</span>
+            </li>
+            <li>
+                <a href="#" tabindex="0">Semantic HTML</a>
+                <span class="description">- header, nav, main, section, article, aside, footer.</span>
+            </li>
+            <li>
+                <a href="#" tabindex="0">Multimedia</a>
+                <span class="description">- Audio, video, embed, iframe.</span>
+            </li>
+            <li>
+                <a href="#" tabindex="0">HTML5 Features</a>
+                <span class="description">- New input types, canvas, local storage, geolocation.</span>
+            </li>
+            <li>
+                <a href="#" tabindex="0">Accessibility</a>
+                <span class="description">- alt text, ARIA roles, semantic tags.</span>
+            </li>
+            <li>
+                <a href="#" tabindex="0">Responsive Design Basics</a>
+                <span class="description">- Meta viewport, media queries (with CSS).</span>
+            </li>
+            <li>
+                <a href="#" tabindex="0">Project Practice</a>
+                <span class="description">- Build simple web pages, portfolios, forms, and layouts.</span>
+            </li>
+            <li>
+                <a href="#" tabindex="0">Further Learning</a>
+                <span class="description">- Introduction to CSS and JavaScript.</span>
+            </li>
+        </ol>
+    </div>
+</body>
+
+</html>
+
+```
